@@ -24,13 +24,13 @@ jobs:
            git config --global user.name ${{ secrets.GitHubName }}
            git config --global user.email ${{ secrets.GitHubMail }}
            git config --global credential.helper store
-           echo "https:/Keqing84:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+           echo "https:/MoviesNebula:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
            
        
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone https://Keqing84:${{ secrets.GH_TOKEN }}@github.com/Keqing84/HM-1.git mast
+           git clone https://MoviesNebula:${{ secrets.GH_TOKEN }}@github.com/MoviesNebula/Anas-Appdrive.git mast
        - name: Running Mast Bot 
          timeout-minutes: 320
          continue-on-error: true
